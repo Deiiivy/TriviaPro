@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\preguntafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\temporizadortrivia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\temporizadortrivia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|c:\\users\\deivy\\source\\repos\\triviapro\\triviapro\\clases\\preguntafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\preguntafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +23,7 @@
       "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\preguntamedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|c:\\users\\deivy\\source\\repos\\triviapro\\triviapro\\clases\\preguntadificil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\preguntadificil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\preguntadificil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -21,18 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\pregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\pregunta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\temporizadortrivia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\temporizadortrivia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\puntaje.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\jugador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,58 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TemporizadorTrivia.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\TemporizadorTrivia.cs",
-              "RelativeDocumentMoniker": "TriviaPro\\Clases\\TemporizadorTrivia.cs",
-              "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\TemporizadorTrivia.cs",
-              "RelativeToolTip": "TriviaPro\\Clases\\TemporizadorTrivia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T03:12:20.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PreguntaFactory.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaFactory.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaFactory.cs",
               "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaFactory.cs",
               "RelativeToolTip": "TriviaPro\\Clases\\PreguntaFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T03:11:39.725Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PreguntaDificil.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaDificil.cs",
-              "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaDificil.cs",
-              "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaDificil.cs",
-              "RelativeToolTip": "TriviaPro\\Clases\\PreguntaDificil.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T03:11:20.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PreguntaMedia.cs",
-              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaMedia.cs",
-              "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaMedia.cs",
-              "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaMedia.cs",
-              "RelativeToolTip": "TriviaPro\\Clases\\PreguntaMedia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T03:11:05.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Pregunta.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\Pregunta.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Clases\\Pregunta.cs",
@@ -117,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PreguntaFacil.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaFacil.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaFacil.cs",
@@ -129,27 +91,66 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Jugador.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\Jugador.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Clases\\Jugador.cs",
               "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\Jugador.cs",
               "RelativeToolTip": "TriviaPro\\Clases\\Jugador.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T03:11:50.683Z"
+              "WhenOpened": "2025-04-07T03:11:50.683Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "TemporizadorTrivia.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\TemporizadorTrivia.cs",
+              "RelativeDocumentMoniker": "TriviaPro\\Clases\\TemporizadorTrivia.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\TemporizadorTrivia.cs",
+              "RelativeToolTip": "TriviaPro\\Clases\\TemporizadorTrivia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T03:12:20.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Puntaje.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\Puntaje.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Clases\\Puntaje.cs",
               "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\Puntaje.cs",
               "RelativeToolTip": "TriviaPro\\Clases\\Puntaje.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T03:12:00.898Z"
+              "WhenOpened": "2025-04-07T03:12:00.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PreguntaMedia.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaMedia.cs",
+              "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaMedia.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaMedia.cs",
+              "RelativeToolTip": "TriviaPro\\Clases\\PreguntaMedia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T03:11:05.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PreguntaDificil.cs",
+              "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaDificil.cs",
+              "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaDificil.cs",
+              "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaDificil.cs",
+              "RelativeToolTip": "TriviaPro\\Clases\\PreguntaDificil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T03:11:20.344Z"
             },
             {
               "$type": "Document",

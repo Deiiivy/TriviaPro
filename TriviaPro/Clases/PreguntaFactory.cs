@@ -118,6 +118,27 @@ namespace TriviaPro.Clases
     }
 },
 
+               {
+    ("Historia", "Difícil"), new List<Pregunta>()
+    {
+        new PreguntaDificil("¿Cuál fue la principal causa de la Guerra de los Cien Años?", MezclarOpciones(new List<string> { "Disputa por la sucesión al trono francés", "Conflicto territorial", "Diferencias religiosas", "Comercio de lana" }), "Disputa por la sucesión al trono francés", "Historia"),
+        new PreguntaDificil("¿Qué documento inglés limitó el poder del rey en 1215?", MezclarOpciones(new List<string> { "Carta Magna", "Acta de Unión", "Bill of Rights", "Tratado de Londres" }), "Carta Magna", "Historia"),
+        new PreguntaDificil("¿Cuál fue el nombre del plan económico para reconstruir Europa tras la Segunda Guerra Mundial?", MezclarOpciones(new List<string> { "Plan Marshall", "Plan Molotov", "Plan Truman", "Plan Dawes" }), "Plan Marshall", "Historia"),
+        new PreguntaDificil("¿Qué civilización antigua construyó la ciudad de Mohenjo-Daro?", MezclarOpciones(new List<string> { "Civilización del valle del Indo", "Sumerios", "Egipcios", "Hititas" }), "Civilización del valle del Indo", "Historia"),
+        new PreguntaDificil("¿Qué tratado estableció las fronteras actuales entre México y EE.UU.?", MezclarOpciones(new List<string> { "Tratado de Guadalupe Hidalgo", "Tratado de Tordesillas", "Tratado Adams-Onís", "Tratado de Versalles" }), "Tratado de Guadalupe Hidalgo", "Historia"),
+        new PreguntaDificil("¿Quién fue el primer canciller de la Alemania unificada en 1871?", MezclarOpciones(new List<string> { "Otto von Bismarck", "Guillermo I", "Hindenburg", "Ludwig Erhard" }), "Otto von Bismarck", "Historia"),
+        new PreguntaDificil("¿Qué emperador romano legalizó el cristianismo en el Imperio?", MezclarOpciones(new List<string> { "Constantino", "Teodosio", "Juliano", "Nerón" }), "Constantino", "Historia"),
+        new PreguntaDificil("¿Qué país fue el primero en independizarse en América Latina?", MezclarOpciones(new List<string> { "Haití", "Venezuela", "México", "Argentina" }), "Haití", "Historia"),
+        new PreguntaDificil("¿Quién lideró la expedición que dio la primera vuelta al mundo?", MezclarOpciones(new List<string> { "Magallanes y Elcano", "Colón", "Díaz", "Américo Vespucio" }), "Magallanes y Elcano", "Historia"),
+        new PreguntaDificil("¿Qué imperio fue derrotado en la batalla de Lepanto en 1571?", MezclarOpciones(new List<string> { "Imperio Otomano", "Imperio Español", "Imperio Austrohúngaro", "Imperio Bizantino" }), "Imperio Otomano", "Historia"),
+        new PreguntaDificil("¿Cuál fue la capital del Imperio Carolingio?", MezclarOpciones(new List<string> { "Aquisgrán", "París", "Roma", "Tours" }), "Aquisgrán", "Historia"),
+        new PreguntaDificil("¿Qué guerra fue conocida como 'La guerra para terminar todas las guerras'?", MezclarOpciones(new List<string> { "Primera Guerra Mundial", "Segunda Guerra Mundial", "Guerra Civil Española", "Guerra de Vietnam" }), "Primera Guerra Mundial", "Historia"),
+        new PreguntaDificil("¿Qué general cartaginés cruzó los Alpes para invadir Roma?", MezclarOpciones(new List<string> { "Aníbal", "Escipión", "Amílcar", "César" }), "Aníbal", "Historia"),
+        new PreguntaDificil("¿Cuál fue el líder de la Revolución Rusa en 1917?", MezclarOpciones(new List<string> { "Lenin", "Trotsky", "Stalin", "Kerensky" }), "Lenin", "Historia"),
+        new PreguntaDificil("¿Qué evento inició la Edad Contemporánea?", MezclarOpciones(new List<string> { "Revolución Francesa", "Descubrimiento de América", "Caída de Constantinopla", "Reforma Protestante" }), "Revolución Francesa", "Historia")
+    }
+},
+
              
 
                 // --- CULTURA GENERAL ---

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|c:\\users\\deivy\\source\\repos\\triviapro\\triviapro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\clases\\preguntafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\clases\\preguntafactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|c:\\users\\deivy\\source\\repos\\triviapro\\triviapro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|solutionrelative:triviapro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95A9AD24-94ED-4E57-BA19-4E78BBE79471}|TriviaPro\\TriviaPro.csproj|C:\\Users\\deivy\\source\\repos\\TriviaPro\\triviapro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,13 +62,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "PreguntaFactory.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaFactory.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Clases\\PreguntaFactory.cs",
               "ToolTip": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Clases\\PreguntaFactory.cs",
               "RelativeToolTip": "TriviaPro\\Clases\\PreguntaFactory.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAAAN4AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA7wIwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T03:11:39.725Z",
               "EditorCaption": ""
@@ -99,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\deivy\\source\\repos\\TriviaPro\\TriviaPro\\Form1.cs",
               "RelativeDocumentMoniker": "TriviaPro\\Form1.cs",

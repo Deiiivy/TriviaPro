@@ -30,7 +30,6 @@ namespace TriviaPro
             btnReiniciar.Enabled = false;
         }
 
-
         private void MostrarPreguntaActual()
         {
             if (indicePregunta >= preguntasActuales.Count)
@@ -52,12 +51,13 @@ namespace TriviaPro
 
             rbtnOpcion1.Checked = rbtnOpcion2.Checked = rbtnOpcion3.Checked = rbtnOpcion4.Checked = false;
 
-            lblPreguntasRestantes.Text = $"Pregunta {indicePregunta + 1} de {preguntasActuales.Count}";
-            lblPuntaje.Text = $"Puntaje: {puntaje.ValorActual}";
+            lblPreguntasRestantes.Text = "Pregunta " + (indicePregunta + 1) + " de " + preguntasActuales.Count;
+            lblPuntaje.Text = "Puntaje: " + puntaje.ValorActual;
             progressBarTiempo.Value = 100;
 
-            int segundos = nivelSeleccionado == "Fácil" ? 20 :
-                           nivelSeleccionado == "Medio" ? 15 : 10;
+            int segundos = 10;
+            if (nivelSeleccionado == "Fácil") segundos = 20;
+            else if (nivelSeleccionado == "Medio") segundos = 15;
 
             temporizador.Iniciar(segundos);
         }
@@ -78,10 +78,11 @@ namespace TriviaPro
             }
             else
             {
-                lblTiempo.Text = $"Tiempo restante: {tiempo}s";
+                lblTiempo.Text = "Tiempo restante: " + tiempo + "s";
 
-                int total = nivelSeleccionado == "Fácil" ? 20 :
-                            nivelSeleccionado == "Medio" ? 15 : 10;
+                int total = 10;
+                if (nivelSeleccionado == "Fácil") total = 20;
+                else if (nivelSeleccionado == "Medio") total = 15;
 
                 progressBarTiempo.Value = (int)((tiempo / (double)total) * 100);
             }
@@ -90,7 +91,7 @@ namespace TriviaPro
         private void FinalizarJuego()
         {
             temporizador.Detener();
-            MessageBox.Show($"🎉 Juego finalizado.\nPuntaje total: {puntaje.ValorActual}", "Resumen");
+            MessageBox.Show("🎉 Juego finalizado.\nPuntaje total: " + puntaje.ValorActual, "Resumen");
             btnResponder.Enabled = false;
             btnIniciar.Enabled = true;
             cmbCategoria.Enabled = true;
@@ -108,15 +109,15 @@ namespace TriviaPro
             categoriaSeleccionada = cmbCategoria.SelectedItem.ToString();
             nivelSeleccionado = cmbNivel.SelectedItem.ToString();
 
-            preguntasActuales = PreguntaFactory.ObtenerPreguntas(categoriaSeleccionada, nivelSeleccionado)
-                                               .OrderBy(p => Guid.NewGuid())
-                                               .ToList();
+            preguntasActuales = PreguntaFactory.ObtenerPreguntas(categoriaSeleccionada, nivelSeleccionado);
 
-            if (preguntasActuales.Count == 0)
+            if (preguntasActuales.Count < 15)
             {
-                MessageBox.Show("No hay preguntas para esta categoría y nivel.");
+                MessageBox.Show("Error: Solo hay " + preguntasActuales.Count + " preguntas para " + categoriaSeleccionada + "/" + nivelSeleccionado + ". Se necesitan 15.");
                 return;
             }
+
+            preguntasActuales = preguntasActuales.OrderBy(p => Guid.NewGuid()).Take(15).ToList();
 
             jugador = new Jugador("Jugador");
             puntaje = new Puntaje();
@@ -157,7 +158,7 @@ namespace TriviaPro
 
             if (esCorrecta)
             {
-                puntaje.Sumar(nivelSeleccionado);
+                puntaje.Sumar(nivelSeleccionado); 
                 MessageBox.Show("✅ ¡Correcto!");
             }
             else
@@ -166,15 +167,13 @@ namespace TriviaPro
                 MessageBox.Show("❌ Incorrecto. La correcta era: " + pregunta.RespuestaCorrecta);
             }
 
-         
             string estado = esCorrecta ? "✔ Correcta" : "✘ Incorrecta";
-            string entradaHistorial = $"[{estado}] {pregunta.Texto}";
+            string entradaHistorial = "[" + estado + "] " + pregunta.Texto;
             lstHistorial.Items.Add(entradaHistorial);
 
             indicePregunta++;
             MostrarPreguntaActual();
         }
-
 
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
@@ -203,9 +202,6 @@ namespace TriviaPro
             rbtnOpcion1.Checked = rbtnOpcion2.Checked = rbtnOpcion3.Checked = rbtnOpcion4.Checked = false;
 
             lstHistorial.Items.Clear();
-
         }
-
-
     }
 }

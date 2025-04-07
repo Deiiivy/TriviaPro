@@ -87,7 +87,7 @@
             // rbtnOpcion1
             // 
             this.rbtnOpcion1.AutoSize = true;
-            this.rbtnOpcion1.Location = new System.Drawing.Point(467, 206);
+            this.rbtnOpcion1.Location = new System.Drawing.Point(441, 206);
             this.rbtnOpcion1.Name = "rbtnOpcion1";
             this.rbtnOpcion1.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion1.TabIndex = 4;
@@ -98,7 +98,7 @@
             // rbtnOpcion2
             // 
             this.rbtnOpcion2.AutoSize = true;
-            this.rbtnOpcion2.Location = new System.Drawing.Point(565, 206);
+            this.rbtnOpcion2.Location = new System.Drawing.Point(609, 206);
             this.rbtnOpcion2.Name = "rbtnOpcion2";
             this.rbtnOpcion2.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion2.TabIndex = 5;
@@ -109,7 +109,7 @@
             // rbtnOpcion3
             // 
             this.rbtnOpcion3.AutoSize = true;
-            this.rbtnOpcion3.Location = new System.Drawing.Point(565, 263);
+            this.rbtnOpcion3.Location = new System.Drawing.Point(609, 263);
             this.rbtnOpcion3.Name = "rbtnOpcion3";
             this.rbtnOpcion3.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion3.TabIndex = 6;
@@ -120,7 +120,7 @@
             // rbtnOpcion4
             // 
             this.rbtnOpcion4.AutoSize = true;
-            this.rbtnOpcion4.Location = new System.Drawing.Point(467, 263);
+            this.rbtnOpcion4.Location = new System.Drawing.Point(441, 263);
             this.rbtnOpcion4.Name = "rbtnOpcion4";
             this.rbtnOpcion4.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion4.TabIndex = 7;

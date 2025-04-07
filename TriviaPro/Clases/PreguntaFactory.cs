@@ -17,25 +17,64 @@ namespace TriviaPro.Clases
                 {
                     ("Ciencia", "Fácil"), new List<Pregunta>()
                     {
-                        new PreguntaFacil("¿Cuál es el planeta más cercano al Sol?", new List<string> { "Mercurio", "Venus", "Tierra", "Marte" }, "Mercurio", "Ciencia"),
-                        new PreguntaFacil("¿Qué gas respiramos principalmente?", new List<string> { "Oxígeno", "Nitrógeno", "CO2", "Hidrógeno" }, "Nitrógeno", "Ciencia"),
-                        new PreguntaFacil("¿Qué líquido necesitamos para vivir?", new List<string> { "Agua", "Aceite", "Alcohol", "Gasolina" }, "Agua", "Ciencia")
+                       new PreguntaFacil("¿Cuál es el planeta más cercano al Sol?", new List<string> { "Mercurio", "Venus", "Tierra", "Marte" }, "Mercurio", "Ciencia"),
+        new PreguntaFacil("¿Qué gas respiramos principalmente?", new List<string> { "Oxígeno", "Nitrógeno", "CO2", "Hidrógeno" }, "Nitrógeno", "Ciencia"),
+        new PreguntaFacil("¿Qué líquido necesitamos para vivir?", new List<string> { "Agua", "Aceite", "Alcohol", "Gasolina" }, "Agua", "Ciencia"),
+        new PreguntaFacil("¿Qué parte del cuerpo usamos para ver?", new List<string> { "Ojos", "Manos", "Nariz", "Pies" }, "Ojos", "Ciencia"),
+        new PreguntaFacil("¿Cuál es el órgano encargado de bombear la sangre?", new List<string> { "Corazón", "Pulmón", "Hígado", "Estómago" }, "Corazón", "Ciencia"),
+        new PreguntaFacil("¿Cuántos planetas hay en el sistema solar?", new List<string> { "8", "7", "9", "10" }, "8", "Ciencia"),
+        new PreguntaFacil("¿Qué estrella da luz y calor a la Tierra?", new List<string> { "El Sol", "La Luna", "Estrella Polar", "Marte" }, "El Sol", "Ciencia"),
+        new PreguntaFacil("¿Qué animal es conocido por cambiar de color?", new List<string> { "Camaleón", "Perro", "Gato", "Elefante" }, "Camaleón", "Ciencia"),
+        new PreguntaFacil("¿Cuál es el hueso más largo del cuerpo humano?", new List<string> { "Fémur", "Húmero", "Radio", "Peroné" }, "Fémur", "Ciencia"),
+        new PreguntaFacil("¿Qué animal pone huevos?", new List<string> { "Gallina", "Perro", "Vaca", "Tigre" }, "Gallina", "Ciencia"),
+        new PreguntaFacil("¿Qué insecto produce miel?", new List<string> { "Abeja", "Mosca", "Mariposa", "Escarabajo" }, "Abeja", "Ciencia"),
+        new PreguntaFacil("¿Qué planeta es conocido como el planeta rojo?", new List<string> { "Marte", "Venus", "Júpiter", "Saturno" }, "Marte", "Ciencia"),
+        new PreguntaFacil("¿Qué usamos para medir la temperatura corporal?", new List<string> { "Termómetro", "Barómetro", "Telescopio", "Microscopio" }, "Termómetro", "Ciencia"),
+        new PreguntaFacil("¿Qué tipo de animal es una ballena?", new List<string> { "Mamífero", "Pez", "Reptil", "Anfibio" }, "Mamífero", "Ciencia"),
+        new PreguntaFacil("¿Qué órgano usamos para oír?", new List<string> { "Oídos", "Ojos", "Manos", "Pies" }, "Oídos", "Ciencia")
                     }
                 },
                 {
                     ("Ciencia", "Medio"), new List<Pregunta>()
                     {
                         new PreguntaMedia("¿Qué órgano produce insulina?", new List<string> { "Hígado", "Riñón", "Páncreas", "Estómago" }, "Páncreas", "Ciencia"),
-                        new PreguntaMedia("¿Qué parte del cuerpo humano contiene el fémur?", new List<string> { "Pierna", "Brazo", "Cabeza", "Torso" }, "Pierna", "Ciencia"),
-                        new PreguntaMedia("¿Cuál es el elemento químico con símbolo O?", new List<string> { "Oxígeno", "Oro", "Osmio", "Oxalato" }, "Oxígeno", "Ciencia")
+        new PreguntaMedia("¿Qué parte del cuerpo humano contiene el fémur?", new List<string> { "Pierna", "Brazo", "Cabeza", "Torso" }, "Pierna", "Ciencia"),
+        new PreguntaMedia("¿Cuál es el elemento químico con símbolo O?", new List<string> { "Oxígeno", "Oro", "Osmio", "Oxalato" }, "Oxígeno", "Ciencia"),
+        new PreguntaMedia("¿Cuál es el proceso por el cual las plantas producen su alimento?", new List<string> { "Fotosíntesis", "Respiración", "Digestión", "Transpiración" }, "Fotosíntesis", "Ciencia"),
+        new PreguntaMedia("¿Qué nombre recibe el cambio de estado de líquido a gas?", new List<string> { "Evaporación", "Condensación", "Solidificación", "Sublimación" }, "Evaporación", "Ciencia"),
+        new PreguntaMedia("¿Qué órgano del cuerpo humano filtra la sangre?", new List<string> { "Riñón", "Pulmón", "Corazón", "Hígado" }, "Riñón", "Ciencia"),
+        new PreguntaMedia("¿Cómo se llama la fuerza que nos mantiene pegados al suelo?", new List<string> { "Gravedad", "Fricción", "Inercia", "Empuje" }, "Gravedad", "Ciencia"),
+        new PreguntaMedia("¿Qué estructura del átomo tiene carga positiva?", new List<string> { "Protón", "Electrón", "Neutrón", "Núcleo" }, "Protón", "Ciencia"),
+        new PreguntaMedia("¿Cuál es la fórmula química del agua?", new List<string> { "H2O", "CO2", "O2", "H2SO4" }, "H2O", "Ciencia"),
+        new PreguntaMedia("¿Qué capa de la atmósfera protege de los rayos UV?", new List<string> { "Capa de ozono", "Troposfera", "Estratósfera", "Ionosfera" }, "Capa de ozono", "Ciencia"),
+        new PreguntaMedia("¿Qué planeta tiene los anillos más visibles?", new List<string> { "Saturno", "Júpiter", "Urano", "Neptuno" }, "Saturno", "Ciencia"),
+        new PreguntaMedia("¿Cómo se llama el órgano que permite respirar?", new List<string> { "Pulmones", "Corazón", "Estómago", "Riñones" }, "Pulmones", "Ciencia"),
+        new PreguntaMedia("¿Qué animal es un mamífero marino?", new List<string> { "Delfín", "Tiburón", "Pulpo", "Pez espada" }, "Delfín", "Ciencia"),
+        new PreguntaMedia("¿Cuál es el nombre del satélite natural de la Tierra?", new List<string> { "La Luna", "Marte", "Venus", "Estrella del Norte" }, "La Luna", "Ciencia"),
+        new PreguntaMedia("¿Qué nombre recibe la ciencia que estudia los seres vivos?", new List<string> { "Biología", "Física", "Química", "Astronomía" }, "Biología", "Ciencia")
+
                     }
                 },
                 {
                     ("Ciencia", "Difícil"), new List<Pregunta>()
                     {
-                        new PreguntaDificil("¿Cuál es la fórmula química de la sal común?", new List<string> { "NaCl", "KCl", "CaCO3", "Na2SO4" }, "NaCl", "Ciencia"),
-                        new PreguntaDificil("¿Qué científico propuso la teoría de la relatividad?", new List<string> { "Einstein", "Newton", "Tesla", "Bohr" }, "Einstein", "Ciencia"),
-                        new PreguntaDificil("¿Qué partícula subatómica tiene carga negativa?", new List<string> { "Electrón", "Protón", "Neutrón", "Quark" }, "Electrón", "Ciencia")
+
+                          new PreguntaDificil("¿Cuál es el proceso por el cual las plantas convierten nitrógeno en una forma utilizable?", new List<string> { "Fijación de nitrógeno", "Fotosíntesis", "Respiración celular", "Transpiración" }, "Fijación de nitrógeno", "Ciencia"),
+        new PreguntaDificil("¿Qué partícula subatómica no tiene carga eléctrica?", new List<string> { "Neutrón", "Electrón", "Protón", "Quark" }, "Neutrón", "Ciencia"),
+        new PreguntaDificil("¿Cuál es el nombre del efecto que describe el cambio en la frecuencia de una onda en movimiento?", new List<string> { "Efecto Doppler", "Efecto Fotoeléctrico", "Efecto Coriolis", "Efecto Joule" }, "Efecto Doppler", "Ciencia"),
+        new PreguntaDificil("¿Qué glándula regula el metabolismo en el cuerpo humano?", new List<string> { "Tiroides", "Hipófisis", "Páncreas", "Suprarrenal" }, "Tiroides", "Ciencia"),
+        new PreguntaDificil("¿Cuál es el segundo elemento más abundante en la atmósfera terrestre?", new List<string> { "Oxígeno", "Nitrógeno", "Argón", "Dióxido de carbono" }, "Oxígeno", "Ciencia"),
+        new PreguntaDificil("¿Qué ley física establece que la energía no se crea ni se destruye?", new List<string> { "Ley de conservación de la energía", "Ley de gravitación universal", "Ley de acción y reacción", "Ley de la inercia" }, "Ley de conservación de la energía", "Ciencia"),
+        new PreguntaDificil("¿Qué científico propuso la teoría del electromagnetismo?", new List<string> { "James Clerk Maxwell", "Isaac Newton", "Albert Einstein", "Galileo Galilei" }, "James Clerk Maxwell", "Ciencia"),
+        new PreguntaDificil("¿Qué tipo de célula carece de núcleo definido?", new List<string> { "Procariota", "Eucariota", "Neuronas", "Glóbulos blancos" }, "Procariota", "Ciencia"),
+        new PreguntaDificil("¿Cómo se denomina el estudio de los seres microscópicos?", new List<string> { "Microbiología", "Virología", "Parasitología", "Genética" }, "Microbiología", "Ciencia"),
+        new PreguntaDificil("¿Cuál es el nombre del gas noble con menor masa atómica?", new List<string> { "Helio", "Neón", "Argón", "Krypton" }, "Helio", "Ciencia"),
+        new PreguntaDificil("¿Qué nombre recibe la distancia entre dos crestas sucesivas de una onda?", new List<string> { "Longitud de onda", "Frecuencia", "Amplitud", "Ciclo" }, "Longitud de onda", "Ciencia"),
+        new PreguntaDificil("¿Cuál es la función principal del ribosoma en una célula?", new List<string> { "Síntesis de proteínas", "Almacenar energía", "Contener ADN", "Moverse" }, "Síntesis de proteínas", "Ciencia"),
+        new PreguntaDificil("¿Qué teoría explica el origen del universo?", new List<string> { "Big Bang", "Creacionismo", "Evolución", "Inflación cósmica" }, "Big Bang", "Ciencia"),
+        new PreguntaDificil("¿Qué fenómeno ocurre cuando la luz cambia de dirección al pasar de un medio a otro?", new List<string> { "Refracción", "Reflexión", "Difracción", "Dispersión" }, "Refracción", "Ciencia"),
+        new PreguntaDificil("¿Qué científico formuló las leyes del movimiento?", new List<string> { "Isaac Newton", "Galileo Galilei", "Stephen Hawking", "Nikola Tesla" }, "Isaac Newton", "Ciencia")
+
                     }
                 },
 
@@ -43,25 +82,64 @@ namespace TriviaPro.Clases
                 {
                     ("Historia", "Fácil"), new List<Pregunta>()
                     {
-                        new PreguntaFacil("¿Quién descubrió América?", new List<string> { "Cristóbal Colón", "Simón Bolívar", "Hernán Cortés", "Napoleón" }, "Cristóbal Colón", "Historia"),
-                        new PreguntaFacil("¿En qué año se firmó la independencia de EE.UU.?", new List<string> { "1776", "1492", "1810", "1945" }, "1776", "Historia"),
-                        new PreguntaFacil("¿Qué civilización construyó las pirámides de Egipto?", new List<string> { "Egipcia", "Romana", "Griega", "Azteca" }, "Egipcia", "Historia")
+                        new PreguntaFacil("¿Quién fue el primer presidente de Estados Unidos?", new List<string> { "George Washington", "Abraham Lincoln", "Thomas Jefferson", "John Adams" }, "George Washington", "Historia"),
+        new PreguntaFacil("¿En qué año se descubrió América?", new List<string> { "1492", "1500", "1600", "1453" }, "1492", "Historia"),
+        new PreguntaFacil("¿Qué civilización construyó las pirámides de Egipto?", new List<string> { "Egipcia", "Griega", "Romana", "Persa" }, "Egipcia", "Historia"),
+        new PreguntaFacil("¿Quién fue el libertador de varios países de América del Sur?", new List<string> { "Simón Bolívar", "Cristóbal Colón", "José Martí", "Pancho Villa" }, "Simón Bolívar", "Historia"),
+        new PreguntaFacil("¿Qué muralla famosa se encuentra en China?", new List<string> { "La Gran Muralla", "Muralla de los Lamentos", "Muro de Berlín", "Muralla de Adriano" }, "La Gran Muralla", "Historia"),
+        new PreguntaFacil("¿Qué país lanzó las bombas atómicas en la Segunda Guerra Mundial?", new List<string> { "Estados Unidos", "Alemania", "Japón", "Rusia" }, "Estados Unidos", "Historia"),
+        new PreguntaFacil("¿Quién fue el líder del nazismo en Alemania?", new List<string> { "Adolf Hitler", "Benito Mussolini", "Josef Stalin", "Winston Churchill" }, "Adolf Hitler", "Historia"),
+        new PreguntaFacil("¿Qué imperio gobernó gran parte de Europa en la antigüedad?", new List<string> { "Imperio Romano", "Imperio Otomano", "Imperio Persa", "Imperio Bizantino" }, "Imperio Romano", "Historia"),
+        new PreguntaFacil("¿Cómo se llamaba el barco en el que viajó Cristóbal Colón?", new List<string> { "La Santa María", "La Pinta", "La Niña", "El Mayflower" }, "La Santa María", "Historia"),
+        new PreguntaFacil("¿Qué famosa reina tuvo seis esposos?", new List<string> { "Catalina de Aragón", "Isabel I", "Ana Bolena", "Enrique VIII (era rey)" }, "Enrique VIII (era rey)", "Historia"),
+        new PreguntaFacil("¿En qué continente ocurrió la Primera Guerra Mundial?", new List<string> { "Europa", "Asia", "África", "América" }, "Europa", "Historia"),
+        new PreguntaFacil("¿Qué país construyó el Muro de Berlín?", new List<string> { "Alemania Oriental", "Alemania Occidental", "Rusia", "Francia" }, "Alemania Oriental", "Historia"),
+        new PreguntaFacil("¿Qué guerra se luchó entre el Norte y el Sur de Estados Unidos?", new List<string> { "Guerra Civil", "Guerra de Independencia", "Guerra Fría", "Guerra de Vietnam" }, "Guerra Civil", "Historia"),
+        new PreguntaFacil("¿Quién escribió el 'Manifiesto Comunista'?", new List<string> { "Karl Marx", "Lenin", "Trotsky", "Stalin" }, "Karl Marx", "Historia"),
+        new PreguntaFacil("¿Qué acontecimiento marcó el inicio de la Edad Media?", new List<string> { "Caída del Imperio Romano", "Descubrimiento de América", "Inicio del Renacimiento", "Revolución Francesa" }, "Caída del Imperio Romano", "Historia")
+
                     }
                 },
                 {
                     ("Historia", "Medio"), new List<Pregunta>()
                     {
-                        new PreguntaMedia("¿En qué año comenzó la Segunda Guerra Mundial?", new List<string> { "1939", "1945", "1914", "1929" }, "1939", "Historia"),
-                        new PreguntaMedia("¿Quién fue el líder de la Alemania nazi?", new List<string> { "Hitler", "Stalin", "Churchill", "Mussolini" }, "Hitler", "Historia"),
-                        new PreguntaMedia("¿Qué país fue invadido al inicio de la Segunda Guerra Mundial?", new List<string> { "Polonia", "Francia", "Rusia", "Austria" }, "Polonia", "Historia")
+                        new PreguntaMedia("¿En qué año cayó el Imperio Romano de Occidente?", new List<string> { "476", "1492", "1453", "1066" }, "476", "Historia"),
+        new PreguntaMedia("¿Quién fue el emperador que dividió el Imperio Romano?", new List<string> { "Diocleciano", "Constantino", "Julio César", "Nerón" }, "Diocleciano", "Historia"),
+        new PreguntaMedia("¿Cuál fue el tratado que puso fin a la Primera Guerra Mundial?", new List<string> { "Tratado de Versalles", "Tratado de París", "Tratado de Viena", "Tratado de Tordesillas" }, "Tratado de Versalles", "Historia"),
+        new PreguntaMedia("¿Qué país fue invadido por Alemania para iniciar la Segunda Guerra Mundial?", new List<string> { "Polonia", "Francia", "Bélgica", "Checoslovaquia" }, "Polonia", "Historia"),
+        new PreguntaMedia("¿Qué reina inglesa fue conocida como 'La Reina Virgen'?", new List<string> { "Isabel I", "Victoria", "Catalina de Aragón", "María Tudor" }, "Isabel I", "Historia"),
+        new PreguntaMedia("¿Qué revolucionario cubano participó en la Revolución de 1959?", new List<string> { "Fidel Castro", "Che Guevara", "Camilo Cienfuegos", "Todos los anteriores" }, "Todos los anteriores", "Historia"),
+        new PreguntaMedia("¿Cuál fue el conflicto armado más largo del siglo XX?", new List<string> { "Guerra Fría", "Guerra de Vietnam", "Segunda Guerra Mundial", "Guerra de Corea" }, "Guerra Fría", "Historia"),
+        new PreguntaMedia("¿Qué rey francés fue apodado el 'Rey Sol'?", new List<string> { "Luis XIV", "Luis XVI", "Luis XIII", "Luis XV" }, "Luis XIV", "Historia"),
+        new PreguntaMedia("¿En qué batalla fue derrotado Napoleón Bonaparte definitivamente?", new List<string> { "Waterloo", "Austerlitz", "Trafalgar", "Borodino" }, "Waterloo", "Historia"),
+        new PreguntaMedia("¿Cuál fue el motivo de la Revolución Francesa?", new List<string> { "Desigualdad social", "Crisis económica", "Ideas ilustradas", "Todas las anteriores" }, "Todas las anteriores", "Historia"),
+        new PreguntaMedia("¿Qué dinastía gobernó China por última vez?", new List<string> { "Qing", "Ming", "Yuan", "Han" }, "Qing", "Historia"),
+        new PreguntaMedia("¿Quién fue el primer emperador romano?", new List<string> { "Augusto", "Julio César", "Nerón", "Tiberio" }, "Augusto", "Historia"),
+        new PreguntaMedia("¿Qué civilización usó el quipu como método de registro?", new List<string> { "Inca", "Maya", "Azteca", "Tolteca" }, "Inca", "Historia"),
+        new PreguntaMedia("¿Qué país colonizó la India hasta 1947?", new List<string> { "Reino Unido", "Francia", "Portugal", "Países Bajos" }, "Reino Unido", "Historia"),
+        new PreguntaMedia("¿Quién fue derrotado en la batalla de Hastings en 1066?", new List<string> { "Harold II", "Guillermo el Conquistador", "Ricardo Corazón de León", "Eduardo el Confesor" }, "Harold II", "Historia")
+
                     }
                 },
                 {
                     ("Historia", "Difícil"), new List<Pregunta>()
                     {
-                        new PreguntaDificil("¿Qué emperador romano legalizó el cristianismo?", new List<string> { "Nerón", "Constantino", "César", "Augusto" }, "Constantino", "Historia"),
-                        new PreguntaDificil("¿En qué año cayó el Imperio Romano de Occidente?", new List<string> { "476", "1492", "800", "1200" }, "476", "Historia"),
-                        new PreguntaDificil("¿Qué guerra ocurrió entre 1914 y 1918?", new List<string> { "Primera Guerra Mundial", "Segunda Guerra Mundial", "Guerra Fría", "Guerra de Corea" }, "Primera Guerra Mundial", "Historia")
+                      new PreguntaDificil("¿Cuál fue la principal causa de la Guerra de los Cien Años?", new List<string> { "Disputa por la sucesión al trono francés", "Conflicto territorial", "Diferencias religiosas", "Comercio de lana" }, "Disputa por la sucesión al trono francés", "Historia"),
+        new PreguntaDificil("¿Qué documento inglés limitó el poder del rey en 1215?", new List<string> { "Carta Magna", "Acta de Unión", "Bill of Rights", "Tratado de Londres" }, "Carta Magna", "Historia"),
+        new PreguntaDificil("¿Cuál fue el nombre del plan económico para reconstruir Europa tras la Segunda Guerra Mundial?", new List<string> { "Plan Marshall", "Plan Molotov", "Plan Truman", "Plan Dawes" }, "Plan Marshall", "Historia"),
+        new PreguntaDificil("¿Qué civilización antigua construyó la ciudad de Mohenjo-Daro?", new List<string> { "Civilización del valle del Indo", "Sumerios", "Egipcios", "Hititas" }, "Civilización del valle del Indo", "Historia"),
+        new PreguntaDificil("¿Qué tratado estableció las fronteras actuales entre México y EE.UU.?", new List<string> { "Tratado de Guadalupe Hidalgo", "Tratado de Tordesillas", "Tratado Adams-Onís", "Tratado de Versalles" }, "Tratado de Guadalupe Hidalgo", "Historia"),
+        new PreguntaDificil("¿Quién fue el primer canciller de la Alemania unificada en 1871?", new List<string> { "Otto von Bismarck", "Guillermo I", "Hindenburg", "Ludwig Erhard" }, "Otto von Bismarck", "Historia"),
+        new PreguntaDificil("¿Qué emperador romano legalizó el cristianismo en el Imperio?", new List<string> { "Constantino", "Teodosio", "Juliano", "Nerón" }, "Constantino", "Historia"),
+        new PreguntaDificil("¿Qué país fue el primero en independizarse en América Latina?", new List<string> { "Haití", "Venezuela", "México", "Argentina" }, "Haití", "Historia"),
+        new PreguntaDificil("¿Quién lideró la expedición que dio la primera vuelta al mundo?", new List<string> { "Magallanes y Elcano", "Colón", "Díaz", "Américo Vespucio" }, "Magallanes y Elcano", "Historia"),
+        new PreguntaDificil("¿Qué imperio fue derrotado en la batalla de Lepanto en 1571?", new List<string> { "Imperio Otomano", "Imperio Español", "Imperio Austrohúngaro", "Imperio Bizantino" }, "Imperio Otomano", "Historia"),
+        new PreguntaDificil("¿Cuál fue la capital del Imperio Carolingio?", new List<string> { "Aquisgrán", "París", "Roma", "Tours" }, "Aquisgrán", "Historia"),
+        new PreguntaDificil("¿Qué guerra fue conocida como 'La guerra para terminar todas las guerras'?", new List<string> { "Primera Guerra Mundial", "Segunda Guerra Mundial", "Guerra Civil Española", "Guerra de Vietnam" }, "Primera Guerra Mundial", "Historia"),
+        new PreguntaDificil("¿Qué general cartaginés cruzó los Alpes para invadir Roma?", new List<string> { "Aníbal", "Escipión", "Amílcar", "César" }, "Aníbal", "Historia"),
+        new PreguntaDificil("¿Cuál fue el líder de la Revolución Rusa en 1917?", new List<string> { "Lenin", "Trotsky", "Stalin", "Kerensky" }, "Lenin", "Historia"),
+        new PreguntaDificil("¿Qué evento inició la Edad Contemporánea?", new List<string> { "Revolución Francesa", "Descubrimiento de América", "Caída de Constantinopla", "Reforma Protestante" }, "Revolución Francesa", "Historia")
+
                     }
                 },
 
@@ -69,25 +147,64 @@ namespace TriviaPro.Clases
                 {
                     ("Cultura General", "Fácil"), new List<Pregunta>()
                     {
-                        new PreguntaFacil("¿Cuál es la capital de Francia?", new List<string> { "París", "Roma", "Madrid", "Londres" }, "París", "Cultura General"),
-                        new PreguntaFacil("¿Cuántos días tiene una semana?", new List<string> { "7", "5", "10", "6" }, "7", "Cultura General"),
-                        new PreguntaFacil("¿Qué color resulta de mezclar azul y amarillo?", new List<string> { "Verde", "Rojo", "Naranja", "Morado" }, "Verde", "Cultura General")
+                        new PreguntaFacil("¿Cuál es el océano más grande del mundo?", new List<string> { "Pacífico", "Atlántico", "Índico", "Ártico" }, "Pacífico", "Cultura General"),
+        new PreguntaFacil("¿Qué país es famoso por la Torre Eiffel?", new List<string> { "Francia", "Italia", "España", "Alemania" }, "Francia", "Cultura General"),
+        new PreguntaFacil("¿Qué día se celebra la Navidad?", new List<string> { "25 de diciembre", "24 de diciembre", "31 de diciembre", "6 de enero" }, "25 de diciembre", "Cultura General"),
+        new PreguntaFacil("¿Cuál es el metal cuyo símbolo es Au?", new List<string> { "Oro", "Plata", "Aluminio", "Cobre" }, "Oro", "Cultura General"),
+        new PreguntaFacil("¿Qué planeta es conocido como el planeta rojo?", new List<string> { "Marte", "Venus", "Júpiter", "Saturno" }, "Marte", "Cultura General"),
+        new PreguntaFacil("¿Cuál es el animal más grande del mundo?", new List<string> { "Ballena azul", "Elefante africano", "Tiburón blanco", "Jirafa" }, "Ballena azul", "Cultura General"),
+        new PreguntaFacil("¿Qué instrumento tiene teclas blancas y negras?", new List<string> { "Piano", "Violín", "Guitarra", "Flauta" }, "Piano", "Cultura General"),
+        new PreguntaFacil("¿Cuántos colores tiene el arcoíris?", new List<string> { "7", "6", "8", "5" }, "7", "Cultura General"),
+        new PreguntaFacil("¿Cuál es el país más poblado del mundo?", new List<string> { "China", "India", "Estados Unidos", "Indonesia" }, "China", "Cultura General"),
+        new PreguntaFacil("¿Qué gas respiramos para vivir?", new List<string> { "Oxígeno", "Dióxido de carbono", "Hidrógeno", "Nitrógeno" }, "Oxígeno", "Cultura General"),
+        new PreguntaFacil("¿Qué instrumento se usa para ver estrellas?", new List<string> { "Telescopio", "Microscopio", "Binoculares", "Reloj solar" }, "Telescopio", "Cultura General"),
+        new PreguntaFacil("¿Cómo se llama el continente donde está Egipto?", new List<string> { "África", "Asia", "Europa", "América" }, "África", "Cultura General"),
+        new PreguntaFacil("¿Qué día de la semana empieza con 'L'?", new List<string> { "Lunes", "Martes", "Miércoles", "Jueves" }, "Lunes", "Cultura General"),
+        new PreguntaFacil("¿Cuántas patas tiene una araña?", new List<string> { "8", "6", "10", "4" }, "8", "Cultura General"),
+        new PreguntaFacil("¿Cuál es el idioma más hablado del mundo?", new List<string> { "Chino mandarín", "Inglés", "Español", "Árabe" }, "Chino mandarín", "Cultura General")
+
                     }
                 },
                 {
                     ("Cultura General", "Medio"), new List<Pregunta>()
                     {
-                        new PreguntaMedia("¿Cuántos continentes hay en el mundo?", new List<string> { "5", "6", "7", "8" }, "7", "Cultura General"),
-                        new PreguntaMedia("¿Cuál es el océano más grande?", new List<string> { "Pacífico", "Atlántico", "Índico", "Ártico" }, "Pacífico", "Cultura General"),
-                        new PreguntaMedia("¿Qué país tiene forma de bota?", new List<string> { "Italia", "España", "Chile", "Egipto" }, "Italia", "Cultura General")
+                        new PreguntaMedia("¿Quién pintó la Mona Lisa?", new List<string> { "Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Miguel Ángel" }, "Leonardo da Vinci", "Cultura General"),
+        new PreguntaMedia("¿Cuál es la capital de Canadá?", new List<string> { "Ottawa", "Toronto", "Vancouver", "Montreal" }, "Ottawa", "Cultura General"),
+        new PreguntaMedia("¿Qué civilización construyó Machu Picchu?", new List<string> { "Inca", "Maya", "Azteca", "Olmeca" }, "Inca", "Cultura General"),
+        new PreguntaMedia("¿Qué científico propuso la teoría de la relatividad?", new List<string> { "Albert Einstein", "Isaac Newton", "Stephen Hawking", "Galileo Galilei" }, "Albert Einstein", "Cultura General"),
+        new PreguntaMedia("¿Cuál es el río más largo del mundo?", new List<string> { "Nilo", "Amazonas", "Yangtsé", "Misisipi" }, "Amazonas", "Cultura General"),
+        new PreguntaMedia("¿En qué país se encuentra la Torre de Pisa?", new List<string> { "Italia", "Francia", "España", "Grecia" }, "Italia", "Cultura General"),
+        new PreguntaMedia("¿Qué país tiene forma de bota?", new List<string> { "Italia", "Brasil", "Chile", "Portugal" }, "Italia", "Cultura General"),
+        new PreguntaMedia("¿Cuál es el elemento químico con símbolo Fe?", new List<string> { "Hierro", "Flúor", "Fósforo", "Francio" }, "Hierro", "Cultura General"),
+        new PreguntaMedia("¿Qué año marcó el fin de la Segunda Guerra Mundial?", new List<string> { "1945", "1939", "1942", "1950" }, "1945", "Cultura General"),
+        new PreguntaMedia("¿Cuántos planetas hay en el sistema solar?", new List<string> { "8", "9", "7", "10" }, "8", "Cultura General"),
+        new PreguntaMedia("¿Qué escritor escribió 'Cien años de soledad'?", new List<string> { "Gabriel García Márquez", "Mario Vargas Llosa", "Julio Cortázar", "Pablo Neruda" }, "Gabriel García Márquez", "Cultura General"),
+        new PreguntaMedia("¿Quién fue el primer presidente de los Estados Unidos?", new List<string> { "George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams" }, "George Washington", "Cultura General"),
+        new PreguntaMedia("¿En qué país se celebraron los primeros Juegos Olímpicos modernos?", new List<string> { "Grecia", "Francia", "Inglaterra", "Alemania" }, "Grecia", "Cultura General"),
+        new PreguntaMedia("¿Qué continente no tiene desiertos?", new List<string> { "Europa", "América", "Oceanía", "Asia" }, "Europa", "Cultura General"),
+        new PreguntaMedia("¿Cuál es el órgano más grande del cuerpo humano?", new List<string> { "La piel", "El hígado", "Los pulmones", "El intestino" }, "La piel", "Cultura General")
+    
                     }
                 },
                 {
                     ("Cultura General", "Difícil"), new List<Pregunta>()
                     {
-                        new PreguntaDificil("¿Qué país tiene la mayor cantidad de islas en el mundo?", new List<string> { "Suecia", "Indonesia", "Canadá", "Filipinas" }, "Suecia", "Cultura General"),
-                        new PreguntaDificil("¿Cuál es la lengua más hablada del mundo?", new List<string> { "Chino mandarín", "Inglés", "Español", "Árabe" }, "Chino mandarín", "Cultura General"),
-                        new PreguntaDificil("¿En qué país se originaron los Juegos Olímpicos?", new List<string> { "Grecia", "Italia", "Egipto", "China" }, "Grecia", "Cultura General")
+                      new PreguntaDificil("¿Cuál es el país más joven del mundo?", new List<string> { "Sudán del Sur", "Kosovo", "Timor Oriental", "Montenegro" }, "Sudán del Sur", "Cultura General"),
+        new PreguntaDificil("¿Qué científico desarrolló la tabla periódica?", new List<string> { "Dmitri Mendeléyev", "Marie Curie", "John Dalton", "Lavoisier" }, "Dmitri Mendeléyev", "Cultura General"),
+        new PreguntaDificil("¿Cuál es la capital de Mongolia?", new List<string> { "Ulán Bator", "Astana", "Tashkent", "Bakú" }, "Ulán Bator", "Cultura General"),
+        new PreguntaDificil("¿En qué año cayó el muro de Berlín?", new List<string> { "1989", "1991", "1985", "1993" }, "1989", "Cultura General"),
+        new PreguntaDificil("¿Quién fue el autor de *La República*?", new List<string> { "Platón", "Aristóteles", "Sócrates", "Demócrito" }, "Platón", "Cultura General"),
+        new PreguntaDificil("¿Qué país tiene más islas en su territorio?", new List<string> { "Suecia", "Filipinas", "Indonesia", "Canadá" }, "Suecia", "Cultura General"),
+        new PreguntaDificil("¿Qué gas es más abundante en la atmósfera terrestre?", new List<string> { "Nitrógeno", "Oxígeno", "Dióxido de carbono", "Argón" }, "Nitrógeno", "Cultura General"),
+        new PreguntaDificil("¿Cuál es el idioma más hablado del mundo como lengua materna?", new List<string> { "Chino mandarín", "Inglés", "Hindú", "Español" }, "Chino mandarín", "Cultura General"),
+        new PreguntaDificil("¿Cuál es el país con más premios Nobel de la Paz?", new List<string> { "Estados Unidos", "Suiza", "Francia", "Reino Unido" }, "Estados Unidos", "Cultura General"),
+        new PreguntaDificil("¿Qué filósofo dijo 'Pienso, luego existo'?", new List<string> { "René Descartes", "Nietzsche", "Immanuel Kant", "Hegel" }, "René Descartes", "Cultura General"),
+        new PreguntaDificil("¿Qué país no tiene fuerzas armadas permanentes?", new List<string> { "Costa Rica", "Panamá", "Islandia", "Liechtenstein" }, "Costa Rica", "Cultura General"),
+        new PreguntaDificil("¿Cuál es el animal nacional de Escocia?", new List<string> { "Unicornio", "León", "Ciervo rojo", "Zorro" }, "Unicornio", "Cultura General"),
+        new PreguntaDificil("¿Qué año marcó la fundación de la ONU?", new List<string> { "1945", "1919", "1939", "1950" }, "1945", "Cultura General"),
+        new PreguntaDificil("¿Cuál es la capital de Bután?", new List<string> { "Thimphu", "Katmandú", "Daca", "Colombo" }, "Thimphu", "Cultura General"),
+        new PreguntaDificil("¿Qué país tiene más volcanes activos del mundo?", new List<string> { "Indonesia", "Japón", "Estados Unidos", "Italia" }, "Indonesia", "Cultura General")
+
                     }
                 }
             };

@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace TriviaPro.Clases
 {
-    internal class Jugador
+    public class Jugador
     {
+        public string Nombre { get; set; }
+        public int Puntaje { get; private set; }
+
+        public Jugador(string nombre)
+        {
+            Nombre = nombre;
+            Puntaje = 0;
+        }
+
+        public void ActualizarPuntaje(int puntos)
+        {
+            Puntaje += puntos;
+            if (Puntaje < 0) Puntaje = 0;
+        }
     }
+
 }

@@ -98,7 +98,7 @@ namespace TriviaPro
         private void FinalizarJuego()
         {
             temporizador.Detener();
-            MessageBox.Show("🎉 Juego finalizado.\nPuntaje total: " + puntaje.ValorActual, "Resumen");
+            MessageBox.Show($"🎉 Juego finalizado.\nJugador: {jugador.Nombre}\nPuntaje total: {puntaje.ValorActual}", "Resumen");
             btnResponder.Enabled = false;
             btnIniciar.Enabled = true;
             cmbCategoria.Enabled = true;
@@ -109,9 +109,9 @@ namespace TriviaPro
         {
             try
             {
-                if (cmbCategoria.SelectedItem == null || cmbNivel.SelectedItem == null)
+                if (cmbCategoria.SelectedItem == null || cmbNivel.SelectedItem == null || string.IsNullOrWhiteSpace(txtNombreJugador.Text))
                 {
-                    MessageBox.Show("Debes seleccionar una categoría y un nivel.");
+                    MessageBox.Show("Debes ingresar tu nombre, seleccionar una categoría y un nivel.");
                     return;
                 }
 
@@ -128,7 +128,9 @@ namespace TriviaPro
 
                 preguntasActuales = preguntasActuales.OrderBy(p => Guid.NewGuid()).Take(15).ToList();
 
-                jugador = new Jugador("Jugador");
+                jugador = new Jugador(txtNombreJugador.Text.Trim());
+                lblNombreJugador.Text = "Jugador: " + jugador.Nombre;
+
                 puntaje = new Puntaje();
                 temporizador = new TemporizadorTrivia();
                 temporizador.TiempoFinalizado += TiempoAgotado;
@@ -223,6 +225,8 @@ namespace TriviaPro
             rbtnOpcion1.Checked = rbtnOpcion2.Checked = rbtnOpcion3.Checked = rbtnOpcion4.Checked = false;
 
             lstHistorial.Items.Clear();
+            txtNombreJugador.Text = "";
+            lblNombreJugador.Text = "";
         }
     }
 }

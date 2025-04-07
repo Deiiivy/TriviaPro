@@ -46,12 +46,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lstHistorial = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtNombreJugador = new System.Windows.Forms.TextBox();
+            this.lblNombreJugador = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbCategoria
             // 
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(88, 81);
+            this.cmbCategoria.Location = new System.Drawing.Point(99, 81);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(121, 21);
             this.cmbCategoria.TabIndex = 0;
@@ -59,7 +62,7 @@
             // cmbNivel
             // 
             this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Location = new System.Drawing.Point(88, 125);
+            this.cmbNivel.Location = new System.Drawing.Point(99, 123);
             this.cmbNivel.Name = "cmbNivel";
             this.cmbNivel.Size = new System.Drawing.Size(121, 21);
             this.cmbNivel.TabIndex = 1;
@@ -151,7 +154,7 @@
             // lblPuntaje
             // 
             this.lblPuntaje.AutoSize = true;
-            this.lblPuntaje.Location = new System.Drawing.Point(447, 123);
+            this.lblPuntaje.Location = new System.Drawing.Point(409, 126);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(35, 13);
             this.lblPuntaje.TabIndex = 10;
@@ -223,11 +226,39 @@
             this.label3.TabIndex = 17;
             this.label3.Text = "Trivia Pro";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 165);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 13);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Nombre Jugador";
+            // 
+            // txtNombreJugador
+            // 
+            this.txtNombreJugador.Location = new System.Drawing.Point(103, 162);
+            this.txtNombreJugador.Name = "txtNombreJugador";
+            this.txtNombreJugador.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreJugador.TabIndex = 19;
+            // 
+            // lblNombreJugador
+            // 
+            this.lblNombreJugador.AutoSize = true;
+            this.lblNombreJugador.Location = new System.Drawing.Point(245, 165);
+            this.lblNombreJugador.Name = "lblNombreJugador";
+            this.lblNombreJugador.Size = new System.Drawing.Size(85, 13);
+            this.lblNombreJugador.TabIndex = 20;
+            this.lblNombreJugador.Text = "Nombre jugador:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 450);
+            this.Controls.Add(this.lblNombreJugador);
+            this.Controls.Add(this.txtNombreJugador);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lstHistorial);
             this.Controls.Add(this.label2);
@@ -273,6 +304,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox lstHistorial;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtNombreJugador;
+        private System.Windows.Forms.Label lblNombreJugador;
     }
 }
 

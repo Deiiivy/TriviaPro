@@ -8,31 +8,27 @@ namespace TriviaPro
 {
     public abstract class Pregunta
     {
-        public string Texto { get; protected set; }
-        public List<string> Opciones { get; protected set; }
-        public string RespuestaCorrecta { get; protected set; }
-        public string Categoria { get; protected set; }
-        public string Nivel { get; protected set; }
+        public string Texto { get; set; }
+        public List<string> Opciones { get; set; }
+        public string RespuestaCorrecta { get; set; }
+        public string Categoria { get; set; }
+        public string Nivel { get; set; }
 
-        public Pregunta(string texto, List<string> opciones, string respuestaCorrecta, string categoria, string nivel)
+        protected Pregunta(string texto, List<string> opciones, string respuestaCorrecta, string categoria, string nivel)
         {
-            if (string.IsNullOrEmpty(texto) || opciones == null || opciones.Count < 3)
-                throw new ArgumentException("Pregunta u opciones inválidas");
+            if (string.IsNullOrWhiteSpace(categoria) || string.IsNullOrWhiteSpace(nivel))
+                throw new ArgumentException("La categoría y el nivel no pueden estar vacíos.");
 
             Texto = texto;
-            Opciones = opciones;
+            Opciones = opciones ?? throw new ArgumentNullException(nameof(opciones));
             RespuestaCorrecta = respuestaCorrecta;
             Categoria = categoria;
             Nivel = nivel;
         }
 
-        public abstract int GetPuntaje();
-        public bool EvaluarRespuesta(string respuestaUsuario)
-        {
-            return RespuestaCorrecta.Equals(respuestaUsuario, StringComparison.OrdinalIgnoreCase);
-        }
-
-        public abstract int GetTiempo(); 
+        public abstract int EvaluarRespuesta(string respuesta);
+        public abstract int ObtenerTiempoLimite();
     }
+
 
 }

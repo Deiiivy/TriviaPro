@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace TriviaPro.Clases
 {
-    internal class PreguntaMedia
+    public class PreguntaMedia : Pregunta
     {
+        public PreguntaMedia(string texto, List<string> opciones, string respuestaCorrecta, string categoria)
+            : base(texto, opciones, respuestaCorrecta, categoria, "Medio") { }
+
+        public override int EvaluarRespuesta(string respuesta) => respuesta == RespuestaCorrecta ? 10 : -2;
+
+        public override int ObtenerTiempoLimite() => 15;
     }
+
 }

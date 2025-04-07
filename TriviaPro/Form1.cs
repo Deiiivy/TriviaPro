@@ -32,34 +32,41 @@ namespace TriviaPro
 
         private void MostrarPreguntaActual()
         {
-            if (indicePregunta >= preguntasActuales.Count)
+            try
             {
-                FinalizarJuego();
-                return;
+                if (indicePregunta >= preguntasActuales.Count)
+                {
+                    FinalizarJuego();
+                    return;
+                }
+
+                var pregunta = preguntasActuales[indicePregunta];
+                lblPregunta.Text = pregunta.Texto;
+
+                var opciones = pregunta.Opciones;
+
+                rbtnOpcion1.Text = opciones[0];
+                rbtnOpcion2.Text = opciones[1];
+                rbtnOpcion3.Text = opciones[2];
+                rbtnOpcion4.Text = opciones.Count > 3 ? opciones[3] : "";
+                rbtnOpcion4.Visible = opciones.Count > 3;
+
+                rbtnOpcion1.Checked = rbtnOpcion2.Checked = rbtnOpcion3.Checked = rbtnOpcion4.Checked = false;
+
+                lblPreguntasRestantes.Text = $"Pregunta {indicePregunta + 1} de {preguntasActuales.Count}";
+                lblPuntaje.Text = $"Puntaje: {puntaje.ValorActual}";
+                progressBarTiempo.Value = 100;
+
+                int segundos = 10;
+                if (nivelSeleccionado == "Fácil") segundos = 20;
+                else if (nivelSeleccionado == "Medio") segundos = 15;
+
+                temporizador.Iniciar(segundos);
             }
-
-            var pregunta = preguntasActuales[indicePregunta];
-            lblPregunta.Text = pregunta.Texto;
-
-            var opciones = pregunta.Opciones;
-
-            rbtnOpcion1.Text = opciones[0];
-            rbtnOpcion2.Text = opciones[1];
-            rbtnOpcion3.Text = opciones[2];
-            rbtnOpcion4.Text = opciones.Count > 3 ? opciones[3] : "";
-            rbtnOpcion4.Visible = opciones.Count > 3;
-
-            rbtnOpcion1.Checked = rbtnOpcion2.Checked = rbtnOpcion3.Checked = rbtnOpcion4.Checked = false;
-
-            lblPreguntasRestantes.Text = "Pregunta " + (indicePregunta + 1) + " de " + preguntasActuales.Count;
-            lblPuntaje.Text = "Puntaje: " + puntaje.ValorActual;
-            progressBarTiempo.Value = 100;
-
-            int segundos = 10;
-            if (nivelSeleccionado == "Fácil") segundos = 20;
-            else if (nivelSeleccionado == "Medio") segundos = 15;
-
-            temporizador.Iniciar(segundos);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error al mostrar la pregunta: " + ex.Message);
+            }
         }
 
         private void TiempoAgotado()
@@ -100,79 +107,93 @@ namespace TriviaPro
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            if (cmbCategoria.SelectedItem == null || cmbNivel.SelectedItem == null)
+            try
             {
-                MessageBox.Show("Debes seleccionar una categoría y un nivel.");
-                return;
+                if (cmbCategoria.SelectedItem == null || cmbNivel.SelectedItem == null)
+                {
+                    MessageBox.Show("Debes seleccionar una categoría y un nivel.");
+                    return;
+                }
+
+                categoriaSeleccionada = cmbCategoria.SelectedItem.ToString();
+                nivelSeleccionado = cmbNivel.SelectedItem.ToString();
+
+                preguntasActuales = PreguntaFactory.ObtenerPreguntas(categoriaSeleccionada, nivelSeleccionado);
+
+                if (preguntasActuales.Count < 15)
+                {
+                    MessageBox.Show("Error: Solo hay " + preguntasActuales.Count + " preguntas para " + categoriaSeleccionada + "/" + nivelSeleccionado + ". Se necesitan 15.");
+                    return;
+                }
+
+                preguntasActuales = preguntasActuales.OrderBy(p => Guid.NewGuid()).Take(15).ToList();
+
+                jugador = new Jugador("Jugador");
+                puntaje = new Puntaje();
+                temporizador = new TemporizadorTrivia();
+                temporizador.TiempoFinalizado += TiempoAgotado;
+                temporizador.TiempoActualizado += ActualizarTiempo;
+
+                indicePregunta = 0;
+
+                btnIniciar.Enabled = false;
+                cmbCategoria.Enabled = false;
+                cmbNivel.Enabled = false;
+                btnResponder.Enabled = true;
+                btnReiniciar.Enabled = true;
+
+                MostrarPreguntaActual();
             }
-
-            categoriaSeleccionada = cmbCategoria.SelectedItem.ToString();
-            nivelSeleccionado = cmbNivel.SelectedItem.ToString();
-
-            preguntasActuales = PreguntaFactory.ObtenerPreguntas(categoriaSeleccionada, nivelSeleccionado);
-
-            if (preguntasActuales.Count < 15)
+            catch (Exception ex)
             {
-                MessageBox.Show("Error: Solo hay " + preguntasActuales.Count + " preguntas para " + categoriaSeleccionada + "/" + nivelSeleccionado + ". Se necesitan 15.");
-                return;
+                MessageBox.Show("Error al iniciar el juego: " + ex.Message);
             }
-
-            preguntasActuales = preguntasActuales.OrderBy(p => Guid.NewGuid()).Take(15).ToList();
-
-            jugador = new Jugador("Jugador");
-            puntaje = new Puntaje();
-            temporizador = new TemporizadorTrivia();
-            temporizador.TiempoFinalizado += TiempoAgotado;
-            temporizador.TiempoActualizado += ActualizarTiempo;
-
-            indicePregunta = 0;
-
-            btnIniciar.Enabled = false;
-            cmbCategoria.Enabled = false;
-            cmbNivel.Enabled = false;
-            btnResponder.Enabled = true;
-            btnReiniciar.Enabled = true;
-
-            MostrarPreguntaActual();
         }
 
         private void btnResponder_Click(object sender, EventArgs e)
         {
-            var pregunta = preguntasActuales[indicePregunta];
-            string seleccion = null;
-
-            if (rbtnOpcion1.Checked) seleccion = rbtnOpcion1.Text;
-            else if (rbtnOpcion2.Checked) seleccion = rbtnOpcion2.Text;
-            else if (rbtnOpcion3.Checked) seleccion = rbtnOpcion3.Text;
-            else if (rbtnOpcion4.Checked) seleccion = rbtnOpcion4.Text;
-
-            if (string.IsNullOrEmpty(seleccion))
+            try
             {
-                MessageBox.Show("Selecciona una respuesta.");
-                return;
+                var pregunta = preguntasActuales[indicePregunta];
+                string seleccion = null;
+
+                if (rbtnOpcion1.Checked) seleccion = rbtnOpcion1.Text;
+                else if (rbtnOpcion2.Checked) seleccion = rbtnOpcion2.Text;
+                else if (rbtnOpcion3.Checked) seleccion = rbtnOpcion3.Text;
+                else if (rbtnOpcion4.Checked) seleccion = rbtnOpcion4.Text;
+
+                if (string.IsNullOrEmpty(seleccion))
+                {
+                    MessageBox.Show("Selecciona una respuesta.");
+                    return;
+                }
+
+                temporizador.Detener();
+
+                bool esCorrecta = pregunta.EvaluarRespuesta(seleccion) > 0;
+
+                if (esCorrecta)
+                {
+                    puntaje.Sumar(nivelSeleccionado);
+                    MessageBox.Show("✅ ¡Correcto!");
+                }
+                else
+                {
+                    puntaje.Restar();
+                    MessageBox.Show("❌ Incorrecto. La correcta era: " + pregunta.RespuestaCorrecta);
+                }
+
+                string estado = esCorrecta ? "✔ Correcta" : "✘ Incorrecta";
+                string entradaHistorial = "[" + estado + "] " + pregunta.Texto;
+                lstHistorial.Items.Add(entradaHistorial);
+
+                indicePregunta++;
+                MostrarPreguntaActual();
             }
-
-            temporizador.Detener();
-
-            bool esCorrecta = pregunta.EvaluarRespuesta(seleccion) > 0;
-
-            if (esCorrecta)
+            catch (Exception ex)
             {
-                puntaje.Sumar(nivelSeleccionado); 
-                MessageBox.Show("✅ ¡Correcto!");
+                MessageBox.Show("Ocurrió un error al procesar la respuesta: " + ex.Message);
             }
-            else
-            {
-                puntaje.Restar();
-                MessageBox.Show("❌ Incorrecto. La correcta era: " + pregunta.RespuestaCorrecta);
-            }
-
-            string estado = esCorrecta ? "✔ Correcta" : "✘ Incorrecta";
-            string entradaHistorial = "[" + estado + "] " + pregunta.Texto;
-            lstHistorial.Items.Add(entradaHistorial);
-
-            indicePregunta++;
-            MostrarPreguntaActual();
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)

@@ -53,7 +53,9 @@
     <Compile Include="Clases\PreguntaMedia.cs" />
     <Compile Include="Clases\Puntaje.cs" />
     <Compile Include="Clases\TemporizadorTrivia.cs" />
-    <Compile Include="Form1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>

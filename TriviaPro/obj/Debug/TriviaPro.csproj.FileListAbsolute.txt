@@ -1,0 +1,10 @@
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.csproj.AssemblyReference.cache
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.Form1.resources
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.Properties.Resources.resources
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.csproj.GenerateResource.cache
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.csproj.CoreCompileInputs.cache
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\bin\Debug\TriviaPro.exe.config
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\bin\Debug\TriviaPro.exe
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\bin\Debug\TriviaPro.pdb
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.exe
+C:\Users\deivy\source\repos\TriviaPro\TriviaPro\obj\Debug\TriviaPro.pdb

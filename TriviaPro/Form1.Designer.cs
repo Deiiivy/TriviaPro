@@ -44,12 +44,14 @@
             this.btnReiniciar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lstHistorial = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cmbCategoria
             // 
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(87, 82);
+            this.cmbCategoria.Location = new System.Drawing.Point(88, 81);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(121, 21);
             this.cmbCategoria.TabIndex = 0;
@@ -57,24 +59,26 @@
             // cmbNivel
             // 
             this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Location = new System.Drawing.Point(87, 152);
+            this.cmbNivel.Location = new System.Drawing.Point(88, 125);
             this.cmbNivel.Name = "cmbNivel";
             this.cmbNivel.Size = new System.Drawing.Size(121, 21);
             this.cmbNivel.TabIndex = 1;
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(100, 206);
+            this.btnIniciar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIniciar.Location = new System.Drawing.Point(232, 99);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciar.Size = new System.Drawing.Size(115, 24);
             this.btnIniciar.TabIndex = 2;
             this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // lblPregunta
             // 
             this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(617, 82);
+            this.lblPregunta.Location = new System.Drawing.Point(447, 165);
             this.lblPregunta.Name = "lblPregunta";
             this.lblPregunta.Size = new System.Drawing.Size(35, 13);
             this.lblPregunta.TabIndex = 3;
@@ -83,7 +87,7 @@
             // rbtnOpcion1
             // 
             this.rbtnOpcion1.AutoSize = true;
-            this.rbtnOpcion1.Location = new System.Drawing.Point(291, 136);
+            this.rbtnOpcion1.Location = new System.Drawing.Point(467, 206);
             this.rbtnOpcion1.Name = "rbtnOpcion1";
             this.rbtnOpcion1.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion1.TabIndex = 4;
@@ -94,7 +98,7 @@
             // rbtnOpcion2
             // 
             this.rbtnOpcion2.AutoSize = true;
-            this.rbtnOpcion2.Location = new System.Drawing.Point(389, 136);
+            this.rbtnOpcion2.Location = new System.Drawing.Point(565, 206);
             this.rbtnOpcion2.Name = "rbtnOpcion2";
             this.rbtnOpcion2.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion2.TabIndex = 5;
@@ -105,7 +109,7 @@
             // rbtnOpcion3
             // 
             this.rbtnOpcion3.AutoSize = true;
-            this.rbtnOpcion3.Location = new System.Drawing.Point(291, 206);
+            this.rbtnOpcion3.Location = new System.Drawing.Point(565, 263);
             this.rbtnOpcion3.Name = "rbtnOpcion3";
             this.rbtnOpcion3.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion3.TabIndex = 6;
@@ -116,7 +120,7 @@
             // rbtnOpcion4
             // 
             this.rbtnOpcion4.AutoSize = true;
-            this.rbtnOpcion4.Location = new System.Drawing.Point(389, 206);
+            this.rbtnOpcion4.Location = new System.Drawing.Point(467, 263);
             this.rbtnOpcion4.Name = "rbtnOpcion4";
             this.rbtnOpcion4.Size = new System.Drawing.Size(63, 17);
             this.rbtnOpcion4.TabIndex = 7;
@@ -126,17 +130,19 @@
             // 
             // btnResponder
             // 
-            this.btnResponder.Location = new System.Drawing.Point(331, 256);
+            this.btnResponder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnResponder.Location = new System.Drawing.Point(504, 306);
             this.btnResponder.Name = "btnResponder";
-            this.btnResponder.Size = new System.Drawing.Size(75, 23);
+            this.btnResponder.Size = new System.Drawing.Size(113, 34);
             this.btnResponder.TabIndex = 8;
             this.btnResponder.Text = "Responder";
             this.btnResponder.UseVisualStyleBackColor = true;
+            this.btnResponder.Click += new System.EventHandler(this.btnResponder_Click);
             // 
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(617, 19);
+            this.lblTiempo.Location = new System.Drawing.Point(593, 123);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(35, 13);
             this.lblTiempo.TabIndex = 9;
@@ -145,7 +151,7 @@
             // lblPuntaje
             // 
             this.lblPuntaje.AutoSize = true;
-            this.lblPuntaje.Location = new System.Drawing.Point(543, 19);
+            this.lblPuntaje.Location = new System.Drawing.Point(447, 123);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(35, 13);
             this.lblPuntaje.TabIndex = 10;
@@ -153,15 +159,15 @@
             // 
             // progressBarTiempo
             // 
-            this.progressBarTiempo.Location = new System.Drawing.Point(331, 12);
+            this.progressBarTiempo.Location = new System.Drawing.Point(412, 70);
             this.progressBarTiempo.Name = "progressBarTiempo";
-            this.progressBarTiempo.Size = new System.Drawing.Size(182, 23);
+            this.progressBarTiempo.Size = new System.Drawing.Size(361, 32);
             this.progressBarTiempo.TabIndex = 11;
             // 
             // lblPreguntasRestantes
             // 
             this.lblPreguntasRestantes.AutoSize = true;
-            this.lblPreguntasRestantes.Location = new System.Drawing.Point(703, 19);
+            this.lblPreguntasRestantes.Location = new System.Drawing.Point(712, 123);
             this.lblPreguntasRestantes.Name = "lblPreguntasRestantes";
             this.lblPreguntasRestantes.Size = new System.Drawing.Size(35, 13);
             this.lblPreguntasRestantes.TabIndex = 12;
@@ -169,17 +175,22 @@
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Location = new System.Drawing.Point(235, 14);
+            this.btnReiniciar.BackColor = System.Drawing.Color.Red;
+            this.btnReiniciar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReiniciar.ForeColor = System.Drawing.Color.White;
+            this.btnReiniciar.Location = new System.Drawing.Point(674, 375);
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(75, 23);
+            this.btnReiniciar.Padding = new System.Windows.Forms.Padding(5);
+            this.btnReiniciar.Size = new System.Drawing.Size(99, 35);
             this.btnReiniciar.TabIndex = 13;
             this.btnReiniciar.Text = "Reiniciar";
-            this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.UseVisualStyleBackColor = false;
+            this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 90);
+            this.label1.Location = new System.Drawing.Point(26, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 14;
@@ -188,17 +199,37 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 158);
+            this.label2.Location = new System.Drawing.Point(26, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "Nivel";
             // 
+            // lstHistorial
+            // 
+            this.lstHistorial.FormattingEnabled = true;
+            this.lstHistorial.Location = new System.Drawing.Point(29, 197);
+            this.lstHistorial.Name = "lstHistorial";
+            this.lstHistorial.Size = new System.Drawing.Size(345, 225);
+            this.lstHistorial.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label3.Location = new System.Drawing.Point(360, 23);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Trivia Pro";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(785, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lstHistorial);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReiniciar);
@@ -240,6 +271,8 @@
         private System.Windows.Forms.Button btnReiniciar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListBox lstHistorial;
+        private System.Windows.Forms.Label label3;
     }
 }
 
